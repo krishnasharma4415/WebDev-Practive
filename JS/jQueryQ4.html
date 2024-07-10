@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Assignment</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: lightgray;
+            height: 350px;
+            display: flex;
+        }
+
+
+        .square {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            background-color: white;
+            display: flex;
+        }
+
+
+        .rounded {
+            border-radius: 10px;
+        }
+
+
+        .yellow-bg {
+            background-color: yellow;
+        }
+
+
+        .traingle {
+            margin-left: 100px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            height: 0;
+            width: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <center>
+        <h2>
+            Limit the entered characters
+        </h2>
+        <textarea id="textarrID1" name="textname1" rows="5" cols="20"></textarea>
+        <pre> You can enter <span class="remaining">25</span> more characters </pre>
+    </center>
+
+
+    <script>
+        $(document).ready(function () {
+            var totalchar = 25;
+            $('textarea').keydown(function () {
+                var leftchars = totalchar - $(this).val().length;
+                $('.remaining').text(leftchars);
+                if (leftchars == 0) {
+                    document.getElementById('textarrID1').disabled = true;
+                }
+            });
+        });
+    </script>
+</body>
+
+
+</html>

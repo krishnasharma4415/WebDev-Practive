@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Assignment</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: lightgray;
+            height: 350px;
+            display: flex;
+        }
+
+
+        .square {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            background-color: white;
+            display: flex;
+        }
+
+
+        .rounded {
+            border-radius: 10px;
+        }
+
+
+        .yellow-bg {
+            background-color: yellow;
+        }
+
+
+        .traingle {
+            margin-left: 100px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            height: 0;
+            width: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form>
+        <h1>UPLOAD FILE</h1>
+        <label for="fileInput">Choose file to get the file size:</label>
+        <input type="file" id="fileInput">
+        <p id="fileSizeOutput"></p>
+    </form>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fileInput').change(function () {
+                var file = this.files[0];
+                var fileSize;
+                if (file.size > 1024 * 1024)
+                    fileSize = (file.size / (1024 * 1024)).toFixed(2) + ' MB';
+                else
+                    fileSize = (file.size / 1024).toFixed(2) + ' KB';
+                $('#fileSizeOutput').text('File size: ' + fileSize);
+            });
+        });
+    </script>
+</body>
+
+
+</html>

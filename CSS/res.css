@@ -1,0 +1,186 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo {
+    float: left;
+    background-color: lightgray;
+}
+
+.logo img {
+    height: 180px;
+    width: 328px;
+    padding-top: 37px;
+    padding-bottom: 16px;
+    padding-left: 76px;
+    padding-right: 76px;
+}
+
+h1 {
+    font-size: 50pt;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: gray;
+    border: 1px solid gray;
+}
+
+.name h3 {
+    text-align: center;
+}
+
+.nav {
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav1
+{
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    padding-left: 180px;
+    padding-right: 145px;
+}
+.nav2
+{
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    padding-left: 261px;
+    padding-right: 260px;
+}
+
+.aboutme {
+    width: 480px;
+    height: 1000px;
+    float: left;
+    background-color: lightgray;
+}
+
+.aboutme p {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+fieldset {
+    text-align: center;
+}
+
+.skills img {
+    padding-top: 20px;
+    padding-left: 35px;
+    height: 40px;
+}
+
+.skills {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ai
+{
+    padding-bottom: 15px;
+}
+.ai span {
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.web {
+    padding-left: 60px;
+    padding-bottom: 15px;
+}
+
+.web span {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pl
+{
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+.pl span
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.info {
+    height: 1000px;
+    background-color: gray;
+}
+.info p
+{
+    font-size: 24px;
+    padding: 40px 40px;
+}
+.info ul
+{
+    padding-left: 60px;
+    text-align: left;
+    font-size: 26px;
+    list-style-type: none;
+}
+.info ul li
+{
+    padding-bottom: 15px;
+}
+.info legend {
+    padding-left: 5px;
+    text-align: center;
+    font-size: 40px;
+}
+.content
+{
+    padding-left: 20px;
+}
+.exp
+{
+    text-align: left;
+}
+.hobby
+{
+    padding-bottom: 15px;
+}  
+.contact
+{
+    padding: 20px;
+}
+.contact h3
+{
+    text-align: center;
+}
+.social-media {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-link img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Sharma Bio Data</title>
+    <link rel="stylesheet" href="BioData.css">
+    <script src="BioData.js"></script>
+</head>
+
+<body>
+    <section>
+        <h1>Krishna Sharma</h1>
+        <h4>AI Enthusiast & Proficient Web Developer</h4>
+
+        <div class="contact-info">
+            <p>krishna_s@srmap.edu.in</p>
+            <p>+91 93152 68810</p>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <h2>About Me <button onclick="toggleSection('about-me')">Show/Hide</button></h2>
+        <p id="about-me-details" style="display: none;">I'm an AI enthusiast and proficient web developer studying at SRM University-AP. I have a diverse skill set, including programming languages (C, C++, Java, Python), technical skills in Microsoft Office and Google Workspace, and expertise in web development technologies (HTML, CSS, JavaScript). I'm currently working on a Skill Exchange Platform and have completed projects in image classification and real estate price prediction. My online profile includes links to GitHub and LinkedIn.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education <button onclick="toggleSection('education')">Show/Hide</button></h2>
+        <ul id="education-details" style="display: none;">
+            <li>SRM University AP (2022-2036) - Engineering</li>
+            <li>St. Joseph (2020) - 12th</li>
+            <li>St. Joseph (2022) - 10th</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills <button onclick="toggleSection('skills')">Show/Hide</button></h2>
+        <div id="skills-details" style="display: none;">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Microsoft Office (Word, PowerPoint)</li>
+                <li>Google Workspace: Google Docs, Sheets, Slides</li>
+            </ul>
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Machine Learning</h3>
+            <ul>
+                <li>Algorithms (Regression, classification & clustering)</li>
+                <li>Tensorflow, Scikit-learn</li>
+                <li>Data Analysis, Model Building</li>
+                <li>Feature Engineering</li>
+                <li>Model Evaluation</li>
+            </ul>
+            <h3>Database Management System</h3>
+            <ul>
+                <li>MySQL</li>
+            </ul>
+            <h3>Operating Systems</h3>
+            <ul>
+                <li>Windows</li>
+                <li>Linux</li>
+                <li>MacOS</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects <button onclick="toggleSection('projects')">Show/Hide</button></h2>
+        <div id="projects-details" style="display: none;">
+            <h3>Skill Exchange Platform (Ongoing)</h3>
+            <p>Developing a web-based platform where users can showcase their skills and learn from others. This
+                platform
+                will facilitate skill exchange and provide opportunities for individuals to connect and learn from each
+                other.</p>
+            <p><b>Technologies/Tools:</b> HTML, CSS, JavaScript</p>
+            <p><b>Status:</b> Currently in development</p>
+
+            <h3>Image Classification Project</h3>
+            <p>Developed an image classification system using Support Vector Classifier (SVC). This project involved
+                preprocessing image data and building a model to accurately classify images into different categories.
+            </p>
+            <p><b>Technologies/Tools:</b> Python, scikit-learn, OpenCV</p>
+            <p><b>Achievements:</b> Preprocessed image data, achieved high accuracy in image classification</p>
+
+            <h3>Real Estate Price Prediction</h3>
+            <p>Developed a machine learning model using linear regression to predict real estate prices. This project
+                involved data preprocessing, building a model, and evaluating its performance in predicting accurate
+                prices.
+            </p>
+            <p><b>Technologies/Tools:</b> Python, scikit-learn</p>
+            <p><b>Achievements:</b> Implemented data preprocessing, achieved high accuracy in price predictions</p>
+    </section>
+    <section id="profile">
+        <h2>Online Profile <button onclick="toggleSection('profile')">Show/Hide</button></h2>
+        <ul id="profile-details" style="display: none;">
+            <li><a href="https://github.com/krishnasharma4415">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/krishna-sharma441500/">LinkedIn</a></li>
+        </ul>
+        </div>
+    </section>
+</body>
+
+</html>

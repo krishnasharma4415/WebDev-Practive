@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    color: darkslategray;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding-top: 20px;
+    color: darkslategray;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: darkslategray;
+}
+.background
+{
+    padding: 20px;
+    background-color: lightgray;
+    color: darkslategray;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid darkgrey;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgrey;
+    border: 1px solid black;
+}
+
+#Result,
+#result,
+#FactResult,
+#ageGroup,
+#calculatorResult {
+    margin-top: 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: white;
+}
+
+.calculator
+{
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 11px;
+    margin-top: 20px;
+    margin-left: 520px;
+    width: 500px;
+    background-color: rgb(100, 100, 100);
+}
+.calculator h2
+{
+    margin-top:0;
+    color:white;
+}
+.calculator button
+{
+    background-color: white;
+    font-size: 18px; 
+    font-weight: 900;
+}

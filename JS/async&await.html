@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        /* // Simulate getting data from a server
+        async function getData() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(455)
+                }, 3500);
+            })
+        } */
+
+        // Simulate getting data from a server
+        async function getData() {
+            let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+            let data = await x.text()
+            console.log(data);
+            return 4415
+        }
+
+        async function main() {
+            console.log("loading modules..");
+
+            console.log("loading data..");
+
+            let data = await getData();
+
+            console.log(data)
+
+            console.log("processing data..");
+            console.log("task completed.");
+        }
+        main()
+
+        // data.then((v) => {
+        //     console.log(data)
+        //     console.log("processing data..");
+        // })
+    </script>
+</body>
+
+</html>

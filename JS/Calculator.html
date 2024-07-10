@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Technology</title>
+  <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+  <h2>Prime Numbers Generator</h2>
+  <input type="number" id="Count" placeholder="Enter N:">
+  <button onclick="generatePrimes()">Generate</button>
+  <div id="Result"></div>
+
+  <h2>Factorial Generator</h2>
+  <input type="number" id="factorial" placeholder="Enter N:">
+  <button onclick="fact()">Generate</button>
+  <div id="FactResult"></div>
+
+  <h2>Matrix Multiplication</h2>
+  <button onclick="inputMatrices()">Enter Matrices</button>
+  <button onclick="multiplyMatrices()">Multiply</button>
+  <p id="result"></p>
+
+  <div class="background">
+    <h2>Background Color Changer</h2>
+    <button onclick="changeBackgroundColor()">Change Color</button>
+  </div>
+
+  <h2>Age Group</h2>
+  <input type="number" id="ageInput" placeholder="Enter Age:">
+  <button onclick="displayAgeGroup()">Check Age Group</button>
+  <div id="ageGroup"></div>
+
+  <div class="calculator">
+    <h2>Calculator</h2>
+    <input type="number" id="num1" placeholder="Number 1:"> <br> <br>
+    <input type="number" id="num2" placeholder="Number 2:"> <br> <br>
+    <button class="op" onclick="add()">+</button>
+    <button class="op" onclick="subtract()">-</button>
+    <button class="op" onclick="multiply()">×</button>
+    <button class="op" onclick="divide()">÷</button>
+    <div id="calculatorResult"></div>
+  </div>
+
+  <script src="Calculator.js"></script>
+</body>
+
+</html>

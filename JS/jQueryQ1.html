@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0%;
+            margin: 0%;
+        }
+        h4
+        {
+            display: inline;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <pre>I never saw <h4>Blue</h4> Cow, I never hope to see one; But I can tell you, anyhow, I'd rather see than be one.
+Change the cow's color to: 
+    </pre>
+    <input id="text" type="text">
+    <button>Change!</button>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("h4").text($("#text").val());
+            });
+        });
+    </script>
+</body>
+</html>

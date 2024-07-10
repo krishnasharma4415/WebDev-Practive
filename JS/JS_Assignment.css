@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(maths.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#backgroundOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+}
+
+button {
+    transition: background-color 0.3s ease;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005F6B;
+    transform: scale(1.1);
+}
+
+p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#output h3 {
+    margin-top: 20px;
+}

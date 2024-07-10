@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            height: 300px;
+            width: 300px;
+            background-color: deepskyblue;
+        }
+
+        .box {
+            height: 30px;
+            width: 30px;
+            background-color: brown;
+            animation-name: anime;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        .box2 {
+            height: 30px;
+            width: 30px;
+            background-color: darkgreen;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: anime 5s ease-in-out 1 infinite,
+                       anime2 5s ease-in-out 1 infinite;
+        }
+
+        @keyframes anime {
+            from {
+                background-color: blueviolet;
+            }
+            to {
+                transform: translateX(270px);
+                background-color: chartreuse;            }
+            }
+        @keyframes anime2 {
+            0%{
+                transform: rotate(45deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
